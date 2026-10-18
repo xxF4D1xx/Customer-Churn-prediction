@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  churn:
+    build: .
+    image: churn:latest
+    volumes:
+      - ./figures:/app/figures
+      - ./results:/app/results
